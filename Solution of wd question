@@ -1,0 +1,161 @@
+// 1. Write a program to perform arithmetic operations on two numbers.[span_0](start_span)[span_0](end_span)
+let num1 = 10;
+let num2 = 5;
+console.log("Addition:", num1 + num2);
+console.log("Subtraction:", num1 - num2);
+console.log("Multiplication:", num1 * num2);
+console.log("Division:", num1 / num2);
+console.log("Modulus:", num1 % num2);
+
+// 2. Write a program to compare two numbers using comparison operators.[span_1](start_span)[span_1](end_span)
+let a = 10;
+let b = 20;
+console.log("a > b:", a > b);
+console.log("a < b:", a < b);
+console.log("a >= b:", a >= b);
+console.log("a <= b:", a <= b);
+console.log("a === b:", a === b);
+console.log("a !== b:", a !== b);
+
+// 3. Write a program to demonstrate logical operators (&&, ||, !).[span_2](start_span)[span_2](end_span)
+let x = true;
+let y = false;
+console.log("x && y:", x && y);
+console.log("x || y:", x || y);
+console.log("!x:", !x);
+
+// 4. Write a program to check whether a number is positive.[span_3](start_span)[span_3](end_span)
+let n1 = 15;
+if (n1 > 0) {
+    console.log(n1 + " is positive.");
+}
+
+// 5. Write a program to check whether a number is even or odd.[span_4](start_span)[span_4](end_span)
+let n2 = 4;
+if (n2 % 2 === 0) {
+    console.log(n2 + " is even.");
+} else {
+    console.log(n2 + " is odd.");
+}
+
+// 6. Write a program to check voting eligibility using if-else.[span_5](start_span)[span_5](end_span)
+let age = 18;
+if (age >= 18) {
+    console.log("Eligible to vote.");
+} else {
+    console.log("Not eligible to vote.");
+}
+
+// 7. Write a program to check whether a number is positive, negative, or zero.[span_6](start_span)[span_6](end_span)
+let n3 = -5;
+if (n3 > 0) {
+    console.log("Positive");
+} else if (n3 < 0) {
+    console.log("Negative");
+} else {
+    console.log("Zero");
+}
+
+// 8. Write a program to calculate grades based on marks using else-if.[span_7](start_span)[span_7](end_span)
+let marks = 85;
+if (marks >= 90) {
+    console.log("Grade: A");
+} else if (marks >= 75) {
+    console.log("Grade: B");
+} else if (marks >= 50) {
+    console.log("Grade: C");
+} else {
+    console.log("Grade: Fail");
+}
+
+// 9. Write a program to find the largest of two numbers.[span_8](start_span)[span_8](end_span)
+let numA = 12;
+let numB = 25;
+if (numA > numB) {
+    console.log(numA + " is larger.");
+} else {
+    console.log(numB + " is larger.");
+}
+
+// 10. Write a program to check whether a year is a leap year.[span_9](start_span)[span_9](end_span)
+let year = 2024;
+if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+    console.log(year + " is a leap year.");
+} else {
+    console.log(year + " is not a leap year.");
+}
+
+// 11. Write a program to print numbers from 1 to 10 using a for loop.[span_10](start_span)[span_10](end_span)
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+// 12. Write a program to print the multiplication table of a given number.[span_11](start_span)[span_11](end_span)
+let tableNum = 5;
+for (let i = 1; i <= 10; i++) {
+    console.log(tableNum + " x " + i + " = " + (tableNum * i));
+}
+
+// 13. Write a program to calculate the sum of the first N natural numbers.[span_12](start_span)[span_12](end_span)
+let N = 10;
+let sumNatural = 0;
+for (let i = 1; i <= N; i++) {
+    sumNatural += i;
+}
+console.log("Sum of first " + N + " natural numbers: " + sumNatural);
+
+// 14. Write a program to print all even numbers between 1 and 50.[span_13](start_span)[span_13](end_span)
+for (let i = 1; i <= 50; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+}
+
+// 15. Write a program to count numbers divisible by 3 between 1 and 100.[span_14](start_span)[span_14](end_span)
+let countDivisibleBy3 = 0;
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0) {
+        countDivisibleBy3++;
+    }
+}
+console.log("Count of numbers divisible by 3 between 1 and 100: " + countDivisibleBy3);
+
+// 16. Write a program to find the largest of three numbers.[span_15](start_span)[span_15](end_span)
+let p = 10, q = 25, r = 15;
+if (p >= q && p >= r) {
+    console.log(p + " is the largest.");
+} else if (q >= p && q >= r) {
+    console.log(q + " is the largest.");
+} else {
+    console.log(r + " is the largest.");
+}
+
+// 17. Write a program to check whether a number is divisible by both 3 and 5.[span_16](start_span)[span_16](end_span)
+let checkNum = 15;
+if (checkNum % 3 === 0 && checkNum % 5 === 0) {
+    console.log(checkNum + " is divisible by both 3 and 5.");
+} else {
+    console.log(checkNum + " is not divisible by both 3 and 5.");
+}
+
+// 18. Write a program to calculate the factorial of a number using a for loop.[span_17](start_span)[span_17](end_span)
+let factNum = 5;
+let factorial = 1;
+for (let i = 1; i <= factNum; i++) {
+    factorial *= i;
+}
+console.log("Factorial of " + factNum + " is " + factorial);
+
+// 19. Write a program to print numbers from 50 to 1 in reverse order.[span_18](start_span)[span_18](end_span)
+for (let i = 50; i >= 1; i--) {
+    console.log(i);
+}
+
+// 20. Write a program to calculate the sum of all odd numbers between 1 and 100.[span_19](start_span)[span_19](end_span)
+let sumOdd = 0;
+for (let i = 1; i <= 100; i++) {
+    if (i % 2 !== 0) {
+        sumOdd += i;
+    }
+}
+console.log("Sum of all odd numbers between 1 and 100: " + sumOdd);
